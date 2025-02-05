@@ -4,9 +4,12 @@ This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-
 
 When you hover over a brand name, the other names fade out, making it clear which one is active. At the same time, an image updates dynamically.
 
+![Image Hover Reveal](./public/effect.gif)
+
 ## Follow me
 
-[@bleoho](https://www.instagram.com/bleoho/)
+[Instagram](https://www.instagram.com/bleoho/)
+[X](https://x.com/bleoho/)
 [Website](https://leeholmes.uk/)
 
 ## Getting Started
