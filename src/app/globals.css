@@ -2,20 +2,47 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+@font-face {
+  font-family: "Roslindale Text Regular";
+  src: url("./fonts/Roslindale-TextRegular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
 }
 
-@media (prefers-color-scheme: dark) {
+@font-face {
+  font-family: "GT America Mono";
+  src: url("./fonts/GT-America-Mono-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+:root {
+  --background: #fff;
+  --foreground: #000000;
+  --font-roslindale: Roslindale Text Regular, sans-serif;
+  --font-gt-america-mono: GT America Mono, monospace;
+}
+
+/* @media (prefers-color-scheme: dark) {
   :root {
     --background: #0a0a0a;
     --foreground: #ededed;
   }
-}
+} */
 
 body {
   color: var(--foreground);
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
+}
+
+li {
+  font-family: var(--font-roslindale);
+  letter-spacing: -0.2rem;
+}
+
+h2, div {
+  font-family: var(--font-gt-america-mono);
 }
