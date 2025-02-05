@@ -7,8 +7,8 @@ export default function Home() {
   const [selectedBrand, setSelectedBrand] = useState(brands[0].name);
 
   return (
-    <div className="h-screen px-8 py-8 flex flex-col justify-between">
-      <div className="grid grid-cols-12">
+    <div className="sm:h-screen px-8 py-8 flex flex-col justify-between">
+      <div className="hidden sm:grid grid-cols-12 sm:mb-60">
         <div className="col-span-2 col-start-4">
           {brands.map((brand, index) =>
             selectedBrand === brand.name ? (
@@ -18,10 +18,10 @@ export default function Home() {
         </div>
       </div>
       <div className="grid grid-cols-12">
-        <div className="col-span-3">
+        <div className="col-span-12 sm:col-span-3 mb-14 sm:mb-0">
           <h2 className="uppercase">Brands</h2>
         </div>
-        <div className="col-span-9">
+        <div className="col-span-12 sm:col-span-9">
           <ul className="flex flex-wrap gap-x-3 text-5xl leading-[1.1] group">
             {brands.map((brand, index) => (
               <li
